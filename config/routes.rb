@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'timeline#index'
   post '/write' => 'timeline#write'
   post '/comment' => 'timeline#comment'
